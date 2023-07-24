@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "cate": "node models/seeds/categorySeeder.js",
     "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +14,6 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
-    "dotenv": "^8.6.0",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.2",
     "express-session": "^1.17.1",
@@ -23,6 +23,7 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
+    "dotenv": "^16.3.1",
     "standard": "^17.1.0"
   }
 }

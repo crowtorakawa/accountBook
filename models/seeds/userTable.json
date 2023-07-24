@@ -1,0 +1,14 @@
+[
+    {
+        "name": "廣志",
+        "email": "user1@example.com",
+        "password": "12345678",
+        "RestaurantNum": [1, 2, 3] 
+    },
+    {
+        "name": "小新",
+        "email": "user2@example.com",
+        "password": "12345678",
+        "RestaurantNum": [4, 5, 6]
+    }
+]

@@ -5,7 +5,7 @@ const app = express()
 const routes = require('./routes')
 const bodyparser = require('body-parser')
 const methodOverride = require('method-override')
-// require('./config/mongoose')
+require('./config/mongoose')
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
