@@ -19,6 +19,11 @@ db.once('open', () => {
         return Promise.all(Array.from(
           { length: COST_TABLE.length },
           (_, i) => Record.create({
+            // name: COST_TABLE[userSeed.costNum[i]].name,
+            // date: COST_TABLE[userSeed.costNum[i]].date,
+            // amount: COST_TABLE[userSeed.costNum[i]].amount,
+            // userId,
+            // categoryId: Category.findOne({ name: COST_TABLE[userSeed.costNum[i]].category })._id
             name: COST_TABLE[i].name,
             date: COST_TABLE[i].date,
             amount: COST_TABLE[i].amount,
