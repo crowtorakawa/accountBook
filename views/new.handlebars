@@ -1,0 +1,72 @@
+<!--  ./views/index.handlebars -->
+<div class="container py-5">
+
+  <div class="row">
+    <div class="col-6  mx-auto">
+      <div class="card">
+        <div class="card-body">
+          {{!-- <h5 class="card-title">Random Password Generator <i class="fas fa-key"></i></h5> --}}
+          <form method="POST" action="/">
+          
+            <div class="row mb-3 g-2">
+              <small class="hint text-muted form-text col-md-3">*必填欄位</small>
+            </div>
+
+            <div class="row mb-2 g-2 align-items-center">
+              <label for="lowercase" class="col-md-3 col-form-label">名稱*：</label>
+              <div class="col-md-8">
+                <div class="form-check form-check-inline col-12">
+                  <input type="text" class="form-control" id="lowercase" name="lowercase">
+                  <label class="form-check-label" for="lowercase">(e.g. abcdefg)</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-2 g-2 align-items-center">
+              <label for="uppercase" class="col-md-3 col-form-label">日期*：</label>
+              <div class="col-md-8">
+                <div class="form-check form-check-inline col-12">
+                  <input type="date" class="form-control" id="dateSet" name="dateSet" style="width: 100%;">
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-2 g-2 align-items-center">
+              <label for="numbers" class="col-md-3 col-form-label">類別*：</label>
+              <div class="col-md-8">
+                <div class="form-check form-check-inline col-12">
+                  <select class="form-select" name="categorySet" id="categorySet">
+                    <option selected>類別</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-2 g-2 align-items-center">
+              <label for="symbols" class="col-md-3 col-form-label">金額*：</label>
+              <div class="col-md-8">
+                <div class="form-check form-check-inline col-12">
+                  <input type="text" class="form-control" id="symbols" name="symbols">
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="submitNew d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-success" type="submit">新增支出</button>
+            </div>
+            
+          </form>
+        </div>
+
+        <small class="card-footer text-muted text-end">
+          請填入上面表單
+        </small>
+      </div>
+    </div>
+  </div>
+</div>

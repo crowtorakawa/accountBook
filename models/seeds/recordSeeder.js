@@ -16,7 +16,6 @@ db.once('open', () => {
         // console.log(`${j}${i}${z}`)
         // console.log(`${j}${SEED_USER[i].costNum[z]}`)
         if (j === SEED_USER[i].costNum[z] - 1) {
-          console.log('get!!!!!!!!!!!!!!!!!!!!!!!')
           returnindex[j] = {
             name: COST_TABLE[SEED_USER[i].costNum[z] - 1].name,
             date: COST_TABLE[SEED_USER[i].costNum[z] - 1].date,
@@ -67,7 +66,7 @@ db.once('open', () => {
 
   Promise.all(records)
     .then(() => {
-      console.log('...done')
+      console.log('...ALL DATA done')
       process.exit()
     })
     .catch(err => console.log(err))

@@ -1,3 +1,39 @@
-.totalBase{
-    display: flex;
+.dataList{
+    display: flex;  
+    /* border: 1px solid black; */
+    width: 600px; 
 }
+.operate{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px red solid; */
+
+}
+/* .create{
+     border: 1px red solid; 
+} 
+*/
+.container{
+    border: 0px;
+}
+
+.hint{
+    /* border: 1px red solid; */
+    align-self: center;
+}
+
+.card-body{
+     /* border: 1px red solid; */
+}
+.row{
+    /* border: 1px green solid; */
+}
+#categorySet{
+    
+    /* width: 500px; */
+    /* box-sizing: border-box; */
+}
+
+
