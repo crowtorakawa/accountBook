@@ -11,13 +11,15 @@ const CATEGORY = {
   餐飲食品: 'fa-solid fa-utensils',
   其他: 'fa-solid fa-pen'
 }
-
+let counter = 1
 const categoryList = []
 for (const key in CATEGORY) {
   categoryList.push({
     name: key,
-    icon: CATEGORY[key]
+    icon: CATEGORY[key],
+    serial: counter
   })
+  counter = counter + 1
 }
 
 // 資料庫連線成功

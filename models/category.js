@@ -8,6 +8,11 @@ const categorySchema = new Schema({
   icon: {
     type: String,
     require: true
+  },
+  serial: {
+    type: Number,
+    require: true
   }
+
 })
 module.exports = mongoose.model('Category', categorySchema)

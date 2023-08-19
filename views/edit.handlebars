@@ -17,7 +17,7 @@
               <label for="lowercase" class="col-md-3 col-form-label">名稱*：</label>
               <div class="col-md-8">
                 <div class="form-check form-check-inline col-12">
-                  <input type="text" class="form-control" id="lowercase" name="lowercase" value="{{recodes.date}}">
+                  <input type="text" class="form-control" id="lowercase" name="lowercase" value="{{recodes.name}}">
                 </div>
               </div>
             </div>
@@ -26,7 +26,7 @@
               <label for="uppercase" class="col-md-3 col-form-label">日期*：</label>
               <div class="col-md-8">
                 <div class="form-check form-check-inline col-12">
-                  <input type="date" class="form-control" id="dateSet"  name="dateSet" style="width: 100%;" >
+                  <input type="date" class="form-control" id="dateSet"  name="dateSet" style="width: 100%;" value="{{date}}">
                 </div>
               </div>
             </div>
@@ -36,11 +36,13 @@
               <div class="col-md-8">
                 <div class="form-check form-check-inline col-12">
                   <select class="form-select" name="categorySet" id="categorySet">
-                    <option selected>類別</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+                    <option selected disabled>-----{{categorys.name}}------</option>
+                    <option value="1">家居物業</option>
+                    <option value="2">交通出行</option>
+                    <option value="3">休閒娛樂</option>
+                    <option value="4">餐飲食品</option>
+                    <option value="5">其他</option>
+                  </select>
                   
                 </div>
               </div>
@@ -50,7 +52,7 @@
               <label for="symbols" class="col-md-3 col-form-label">金額*：</label>
               <div class="col-md-8">
                 <div class="form-check form-check-inline col-12">
-                  <input type="text" class="form-control" id="symbols" name="symbols">
+                  <input type="text" class="form-control" id="symbols" name="symbols" value="{{recodes.amount}}">
                 </div>
               </div>
             </div>
